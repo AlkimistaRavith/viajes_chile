@@ -3,28 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js"></script>
+
+    <title>Viajes Chile</title>
 </head>
 <body>
     <!--Navegador-->
-    <nav>
-        <p>Aquí va el navegador</p>
-    </nav>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/img/viajes.svg" width="50px" class="d-inline-block align-text-top me-2">
+            Viajes Chile
+          </a>
+          <button class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end barra p-3 rounded" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#somos">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#destacado">Destacados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!--Carrusel Inicio-->
-    <header>
-        <p>Aquí va el carrusel principal</p>
+    <header class="inicio">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Desierto de Atacama</h5>
+                    <p>Uno de los lugares más impresionantes de Chile.
+                        <br>Ubicado en la zona Norte del país.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Isla de Pascua</h5>
+                    <p>El atractivo de Chile insular.
+                        <br>Con una cultura y tradición enriquecedora.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Archipiélago de Tierra del Fuego</h5>
+                    <p>Las maravillas que esperan ser encontradas<br>en la zona más austral de Chile.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
-    <!--Cards con lugares de interés-->
-    <section>
-        <p>Aquí va puntos de interés</p>
+    <!--Quienes somos-->
+    <section id="somos" class="quien_somos container d-md-block d-none">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"/>
+                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                </svg>
+                <p>La agencia Viajes Chile tiene su oficina central en Santiago, y cuenta con guías locales que, al ser oriundos del país, comparten no solo su conocimiento, sino también sus propias raíces y cultura. Gracias a esta conexión auténtica, podrás enriquecer tu experiencia de viaje con una guía llena de historias, tradiciones y saberes únicos de Chile.</p>
+            </div>
+            <div class="col-md-4">
+                <p>Además de su sede central en Santiago, Viajes Chile cuenta con oficinas en diversas capitales alrededor del mundo, como Madrid, París, Roma, Nueva York y Tokio, lo que permite ofrecer asistencia personalizada y un servicio cercano a viajeros internacionales. Esta red global garantiza apoyo en cada etapa del viaje, manteniendo siempre la calidad y el compromiso que distinguen a la agencia.</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                    <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                </svg>
+            </div>
+            <div class="col-md-4">
+                <svg width="50" height="50" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 81.75" style="enable-background:new 0 0 122.88 81.75" xml:space="preserve"><g><path d="M70.66,4.52c1.68,0,3.2,0.68,4.3,1.78c1.1,1.1,1.78,2.62,1.78,4.3c0,1.68-0.68,3.2-1.78,4.3c-1.1,1.1-2.62,1.78-4.3,1.78 c-1.68,0-3.2-0.68-4.3-1.78c-1.1-1.1-1.78-2.62-1.78-4.3c0-1.68,0.68-3.2,1.78-4.3C67.45,5.21,68.98,4.52,70.66,4.52L70.66,4.52 L70.66,4.52z M97.31,60.16c-2.51-2.42-4.92-4.69-5.75-5.17c-1.96-1.12-6.48-4.21-8.47-4.17c-1.46,0.04-2.83,0.86-4.11,2.54 l-6.7,10.1l-1.26,1.3l-1.26-1.3l-6.7-10.1c-1.28-1.68-2.65-2.51-4.11-2.54c-1.99-0.04-6.51,3.05-8.47,4.17l-4.66,2.65L13.56,64.7 c-2.08,1.54-15.8,16.53-13.24,17.06l56.99,0h0.04h12l53.54,0v-12.4l-9.82-4.63c-3.16-1.49-6.43,0.98-8.15,1.81V48.11h16.21 c1.62-0.19,1.99-2.16,1.25-3.02l-0.99-1.15l-8.99-10.56h5.99c1.42-0.27,2.05-2.23,0.81-3.45l-10.31-12.08h2.72 c1.9,0,2.83-1.64,1.74-3.21L103.29,2.9c-0.58-0.67-1.16-1.58-2.13-1.61c-1.12-0.03-1.82,1.1-2.46,1.87L89.23,14.4 c-1.22,1.64-0.75,3.4,1.15,3.34h3.03L83.03,29.94c-1.14,1.42-0.44,3.44,1.43,3.17h5.16l0.28,0.28L80.26,44.7 c-1.08,1.66-0.57,3.65,1.96,3.42h15.09V60.16L97.31,60.16z M33.67,4.75c1.61-0.55,3.3-0.39,4.72,0.3c1.42,0.69,2.58,1.94,3.13,3.55 c0.55,1.61,0.4,3.3-0.3,4.72c-0.69,1.42-1.94,2.58-3.55,3.13c-1.61,0.55-3.3,0.4-4.72-0.3c-1.42-0.69-2.58-1.94-3.13-3.55 c-0.55-1.61-0.4-3.3,0.3-4.72C30.82,6.46,32.05,5.31,33.67,4.75L33.67,4.75L33.67,4.75z M49.64,22.04 c-0.24-0.88,0.29-1.79,1.17-2.02c0.88-0.24,1.79,0.29,2.02,1.17l0.53,1.96l0.07-0.03l0.02-0.01c0.63-0.21,1.36-0.08,2,0.3 c0.46,0.27,0.87,0.66,1.16,1.15c0.3,0.49,0.48,1.07,0.48,1.71c-0.01,0.92-0.41,1.94-1.43,2.96c-0.04,0.04-0.09,0.08-0.15,0.09 l-0.45,0.18l4.72,17.6c-0.3-0.04-0.61-0.08-0.91-0.08c-0.73-0.02-1.55,0.17-2.4,0.47l-4.5-16.77l-1.16,0.46l0,0l-0.43,0.16 c-2.51,0.89-4.34,1.54-7.53,0.75c-0.02-0.01-0.04-0.01-0.07-0.02c-2.23-0.86-3.39-2.07-4.51-3.25l-0.16-0.17l-1.43,9.08 c1.28,0.8,2.55,1.4,3.75,1.96c3.65,1.7,6.65,3.11,7.3,8.84c0.12,1.03,0.06,2,0.01,3.05v0.02c-0.01,0.15-0.02,0.31-0.03,0.69 l-1.39,0.79c-1.58,0.1-3.36,0.44-5.24,0.94c0.03-0.76,0.07-1.51,0.11-2.26l0.03-0.52c0.03-0.6,0.06-1.15,0.03-1.67 c-0.03-0.49-0.12-0.95-0.33-1.4l-0.06-0.12c-0.23-0.49-0.44-0.96-0.75-1.1c-0.63-0.29-1.61-0.65-2.74-1.02 c-1.29-0.43-2.73-0.86-4-1.21c-0.93,3.09-2.2,5.13-3.55,8.68c-0.47,1.22-0.94,2.42-1.43,3.57c-0.46,0.2-0.89,0.39-1.31,0.58 c-2.08,0.93-3.52,1.65-5.73,1.18c-0.23-0.05-0.47-0.09-0.71-0.14c0.89-2.31,1.83-4.92,2.75-7.55c1.38-3.94,2.7-6.28,3.67-9.5 c-0.58-0.71-1.13-1.5-1.51-2.38c-0.42-0.96-0.62-2.01-0.41-3.13l2.03-10.99l-0.11-0.01c-0.71-0.03-1.29-0.06-1.96,0.24 c-0.93,0.41-1.65,1.23-2.47,2.15c-0.33,0.37-0.67,0.76-1.06,1.15l-0.03,0.02c-0.29,0.3-0.59,0.61-0.88,0.9l-3.59,3.63 c-0.16,0.16-0.4,0.16-0.56,0l-3.91-4.11c-0.15-0.16-0.15-0.41,0.01-0.56l3.58-3.62c0.31-0.31,0.58-0.59,0.83-0.85l0.04-0.04 c1.61-1.76,2.93-3.18,4.61-4.13c1.71-0.96,3.75-1.45,6.81-1.31h0.01c1.09,0.01,2.38,0.13,3.44,0.23c0.49,0.04,0.94,0.09,1.31,0.11 c5.15,0.34,7.57,3.05,9.44,5.16c0.83,0.93,1.54,1.74,2.32,2.11c0.36,0.17,0.94-0.07,1.59-0.34c0.39-0.17,0.81-0.34,1.25-0.46 c0.29-0.11,0.44-0.17,0.56-0.21c0.16-0.06,0.26-0.1,0.33-0.13l1.53-0.61L49.64,22.04L49.64,22.04L49.64,22.04z M65.22,2.28 c-0.19-0.32-0.08-0.74,0.25-0.93c0.32-0.19,0.74-0.08,0.93,0.25l0.87,1.51c0.19,0.32,0.08,0.74-0.25,0.93 c-0.33,0.19-0.74,0.08-0.93-0.25L65.22,2.28L65.22,2.28L65.22,2.28z M70.11,0.68c0-0.38,0.3-0.68,0.68-0.68s0.68,0.31,0.68,0.68 v1.75c0,0.38-0.3,0.68-0.68,0.68s-0.68-0.31-0.68-0.68V0.68L70.11,0.68L70.11,0.68z M75.15,1.74c0.19-0.32,0.6-0.44,0.93-0.25 c0.32,0.19,0.44,0.6,0.25,0.93l-0.87,1.51c-0.19,0.33-0.6,0.44-0.93,0.25s-0.44-0.6-0.25-0.93L75.15,1.74L75.15,1.74L75.15,1.74z M78.98,5.18c0.33-0.19,0.74-0.08,0.93,0.25c0.19,0.32,0.08,0.74-0.25,0.93l-1.51,0.87c-0.32,0.19-0.74,0.08-0.93-0.25 c-0.19-0.32-0.08-0.74,0.25-0.93L78.98,5.18L78.98,5.18L78.98,5.18z M80.58,10.07c0.38,0,0.68,0.3,0.68,0.68 c0,0.38-0.31,0.68-0.68,0.68h-1.75c-0.38,0-0.68-0.3-0.68-0.68c0-0.38,0.3-0.68,0.68-0.68H80.58L80.58,10.07L80.58,10.07z M79.52,15.11c0.32,0.19,0.44,0.6,0.25,0.93c-0.19,0.32-0.6,0.44-0.93,0.25l-1.51-0.87c-0.32-0.19-0.44-0.6-0.25-0.93 c0.19-0.33,0.6-0.44,0.93-0.25L79.52,15.11L79.52,15.11L79.52,15.11z M76.09,18.94c0.19,0.32,0.08,0.74-0.25,0.93 c-0.32,0.19-0.74,0.08-0.93-0.25l-0.87-1.51c-0.19-0.32-0.08-0.74,0.25-0.93c0.32-0.19,0.74-0.08,0.93,0.25L76.09,18.94 L76.09,18.94L76.09,18.94z M71.2,20.54c0,0.38-0.31,0.68-0.68,0.68c-0.38,0-0.68-0.31-0.68-0.68v-1.75c0-0.38,0.3-0.68,0.68-0.68 c0.38,0,0.68,0.3,0.68,0.68V20.54L71.2,20.54L71.2,20.54z M66.16,19.48c-0.19,0.32-0.6,0.44-0.93,0.25 c-0.32-0.19-0.44-0.6-0.25-0.93l0.87-1.51c0.19-0.32,0.6-0.44,0.93-0.25s0.44,0.6,0.25,0.93L66.16,19.48L66.16,19.48L66.16,19.48z M62.33,16.04c-0.32,0.19-0.74,0.08-0.93-0.25c-0.19-0.32-0.08-0.74,0.25-0.93l1.51-0.87c0.32-0.19,0.74-0.08,0.93,0.25 c0.19,0.32,0.08,0.74-0.25,0.93L62.33,16.04L62.33,16.04L62.33,16.04z M60.73,11.15c-0.38,0-0.68-0.31-0.68-0.68 c0-0.38,0.31-0.68,0.68-0.68h1.75c0.38,0,0.68,0.3,0.68,0.68c0,0.38-0.3,0.68-0.68,0.68H60.73L60.73,11.15L60.73,11.15z M61.79,6.11c-0.32-0.19-0.44-0.6-0.25-0.93c0.19-0.32,0.6-0.44,0.93-0.25l1.51,0.87c0.33,0.19,0.44,0.6,0.25,0.93 c-0.19,0.32-0.6,0.44-0.93,0.25L61.79,6.11L61.79,6.11L61.79,6.11z"/></g></svg>
+                <p>Chile es un destino privilegiado para los amantes del trekking, la aventura y la exploración, con paisajes que van desde el desierto de Atacama, el más árido del mundo, hasta las imponentes montañas de la Patagonia y Torres del Paine. Sus múltiples parques nacionales, senderos escénicos y reservas naturales ofrecen experiencias inolvidables para quienes buscan conectar con la naturaleza y descubrir la diversidad geográfica y cultural del país.</p>
+            </div>
+        </div>
+    </section>
+    <!--Cards con lugares Destacados-->
+    <section id="destacado" class="destacados container">
+      <div class="row justify-content-center">
+        <div class="card col-md-3 col-6">
+          <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-6">
+          <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-6">
+          <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+        </div>
+        <div class="card col-md-3 col-6">
+          <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <!--Form Control para Contacto-->
-    <section>
-        <p>Aquí va Form Control de Contacto</p>
+    <section id="contacto">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <button type="button" class="btn btn-info">Enviar</button>
     </section>
     <!--Footer con links de RRSS-->
-    <footer>
-        <p>Aquí va el footer</p>
+    <footer class="container">
+      <div class="row d-flex">
+        <div class="justify-content-start">
+          <p>Viajes Chile</p>
+        </div>
+        <div class="justify-content-end">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+              <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+            </svg>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </div>
+        </div>  
+      </div>              
     </footer>
 
 </body>
