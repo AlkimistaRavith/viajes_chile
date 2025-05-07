@@ -1,39 +1,112 @@
+/* Fuentes utilizadas: Monserrat para titulos y Lato para texto */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Se aplica estilo base a toda la página, con fondo negro y fuente Lato color blanco */
 body {
     font-family: "Lato", sans-serif;
     background-color: black;
     color: white;
 }
 
-h5 {
+/* Titulos de cada sección con fuente Monserrat, semi bold y alineamiento centrado */
+h2 {
     font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 600;
 }
 
+/* Titulos informativos de imagenes en carrusel */
 h3 {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Se aplica a la barra de navegador un color de fondo semi-transparente y altura fija */
 .navbar {
     background-color: rgba(0, 0, 0, 0.4);
+    height: 50px;
 }
 
+/* Se aplica a los links del navegador color y tamaño de fuente */
 .nav-link {
     color: white;
     font-size: 20px;
 }
 
+/* Se aplica al texto (no titulo), del carrusel, tamaño y fondo semi-transparente para constraste con imagenes */
 .carousel-caption {
     font-size: 23px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Se aplica fondo de contraste a los iconos de sección "Quienes somos" */
 .icono {
     background-color: rgb(0, 85, 0);
 }
 
+/* Configuración a las imagenes de las tarjetas en Destacado */
 .card-img-top {
-    width: 100%;         /* Siempre 100% del ancho disponible */
-    height: 200px;       /* 🔥 Ajusta este valor al alto deseado */
-    object-fit: cover;   /* Recorta la imagen para que no se deforme */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
+
+/* Estilo de las tarjetas, color de constraste (verde) */
+.card {
+    background-color: rgb(0, 85, 0);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* configuración para mostrar tamaño fijo de tarjeta, modificable con JS */
+.card-body {
+    max-height: 150px; /* altura inicial */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    position: relative;
+}
+/* continuación de configuración tarjetas expandibles */
+.card-body.expanded {
+    max-height: 1000px; /* altura máxima ajustable para mostrar todo */
+}
+/* configuración de botón que permite expandir y contraer tarjetas */
+.toggle-btn {
+    display: block;
+    margin: 10px auto 0;
+    padding: 5px 10px;
+    border: none;
+    background: rgb(0, 85, 0); /* color Bootstrap verde */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+/* tono más oscuro al pasar el mouse */
+.toggle-btn:hover {
+    background: #145c32; 
+}
+
+/* configuración botón formulario */
+.btn {
+    background-color: rgb(0, 85, 0);
+}
+/* configuración cuadros del formulario */
+.contactar {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* configuración del footer con color de constraste (verde) */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 85, 0);
+    font-size: 20px;
+  }
