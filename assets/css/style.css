@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.carousel-caption {
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.icono {
+    background-color: rgb(0, 85, 0);
+}
+
+.card-img-top {
+    width: 100%;         /* Siempre 100% del ancho disponible */
+    height: 200px;       /* 🔥 Ajusta este valor al alto deseado */
+    object-fit: cover;   /* Recorta la imagen para que no se deforme */
+}
